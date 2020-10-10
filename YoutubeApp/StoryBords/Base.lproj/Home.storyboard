@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNt-E9-Z9f">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Youtube" translatesAutoresizingMaskIntoConstraints="NO" id="Xtp-vc-eX2">
+                                        <rect key="frame" x="10" y="5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Xkk-tm-U5F"/>
+                                            <constraint firstAttribute="width" constant="50" id="hpz-hI-9eE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YouTube" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJn-bC-E7W">
+                                        <rect key="frame" x="63" y="18" width="81" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my" translatesAutoresizingMaskIntoConstraints="NO" id="hP7-rr-DdS">
+                                        <rect key="frame" x="364" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="KYR-CZ-cfY"/>
+                                            <constraint firstAttribute="width" secondItem="hP7-rr-DdS" secondAttribute="height" multiplier="1:1" id="d9M-Ui-47i"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYo-YO-Dzq">
+                                        <rect key="frame" x="326" y="12.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="KYo-YO-Dzq" secondAttribute="height" multiplier="1:1" id="RAP-DC-EJH"/>
+                                            <constraint firstAttribute="width" constant="35" id="jEe-Nu-SbS"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="虫眼鏡"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KD-9Q-qNF">
+                                        <rect key="frame" x="288" y="12.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="XNK-Yn-nUS"/>
+                                            <constraint firstAttribute="width" secondItem="9KD-9Q-qNF" secondAttribute="height" multiplier="1:1" id="zup-zh-Oak"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="video-camera"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="hP7-rr-DdS" firstAttribute="centerY" secondItem="uNt-E9-Z9f" secondAttribute="centerY" id="1Kd-4S-qLP"/>
+                                    <constraint firstItem="KYo-YO-Dzq" firstAttribute="centerY" secondItem="uNt-E9-Z9f" secondAttribute="centerY" id="3m8-yU-cGE"/>
+                                    <constraint firstItem="KYo-YO-Dzq" firstAttribute="leading" secondItem="9KD-9Q-qNF" secondAttribute="trailing" constant="3" id="Imc-6k-41E"/>
+                                    <constraint firstAttribute="height" constant="60" id="KGd-lU-KcQ"/>
+                                    <constraint firstItem="Xtp-vc-eX2" firstAttribute="leading" secondItem="uNt-E9-Z9f" secondAttribute="leading" constant="10" id="Kgi-Bu-W81"/>
+                                    <constraint firstItem="Xtp-vc-eX2" firstAttribute="centerY" secondItem="uNt-E9-Z9f" secondAttribute="centerY" id="L9x-Lb-UFc"/>
+                                    <constraint firstItem="hP7-rr-DdS" firstAttribute="leading" secondItem="KYo-YO-Dzq" secondAttribute="trailing" constant="3" id="Q9j-R2-Q15"/>
+                                    <constraint firstItem="9KD-9Q-qNF" firstAttribute="centerY" secondItem="uNt-E9-Z9f" secondAttribute="centerY" id="f00-Me-hDJ"/>
+                                    <constraint firstItem="AJn-bC-E7W" firstAttribute="centerY" secondItem="uNt-E9-Z9f" secondAttribute="centerY" id="gTc-Ux-Dri"/>
+                                    <constraint firstItem="AJn-bC-E7W" firstAttribute="leading" secondItem="Xtp-vc-eX2" secondAttribute="trailing" constant="3" id="kix-Vy-alL"/>
+                                    <constraint firstAttribute="trailing" secondItem="hP7-rr-DdS" secondAttribute="trailing" constant="10" id="qxF-2U-PuF"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PQI-jl-Lw2">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="irB-Gs-LTW">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SnQ-Rx-o6N">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="v7F-C4-QN2">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PQI-jl-Lw2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5kX-bc-6xp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQI-jl-Lw2" secondAttribute="trailing" id="90Q-UF-9ZQ"/>
+                            <constraint firstItem="uNt-E9-Z9f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AXI-Sk-3GH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uNt-E9-Z9f" secondAttribute="trailing" id="EOA-Yz-uYK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PQI-jl-Lw2" secondAttribute="bottom" id="OyP-MF-hgV"/>
+                            <constraint firstItem="PQI-jl-Lw2" firstAttribute="top" secondItem="uNt-E9-Z9f" secondAttribute="bottom" id="igu-50-dOv"/>
+                            <constraint firstItem="uNt-E9-Z9f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oLg-cA-e9l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="headerHeightConstraint" destination="KGd-lU-KcQ" id="F9n-0U-nQg"/>
+                        <outlet property="headerTopConstraint" destination="oLg-cA-e9l" id="Ndw-a5-Mkt"/>
+                        <outlet property="headerView" destination="uNt-E9-Z9f" id="nbj-RM-XDI"/>
+                        <outlet property="profileImageView" destination="hP7-rr-DdS" id="hJP-Qs-8FG"/>
+                        <outlet property="videoListCollectionView" destination="PQI-jl-Lw2" id="OWG-T1-v9O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Youtube" width="512" height="512"/>
+        <image name="my" width="225" height="225"/>
+        <image name="video-camera" width="300" height="300"/>
+        <image name="虫眼鏡" width="300" height="300"/>
+    </resources>
+</document>
