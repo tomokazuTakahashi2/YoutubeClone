@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video View Controller-->
+        <scene sceneID="riC-jH-dV9">
+            <objects>
+                <viewController storyboardIdentifier="VideoViewController" modalPresentationStyle="overCurrentContext" id="ATR-0d-JUw" customClass="VideoViewController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7BE-qp-omJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dT-xb-485">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ex2-q2-erx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iew-cY-wOy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="280"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="rsw-m1-2p2"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7s-ZV-AbP">
+                                <rect key="frame" x="0.0" y="324" width="414" height="250"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5bq-TF-TdE">
+                                        <rect key="frame" x="10" y="10" width="394" height="36.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ビデオのタイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlF-L3-rR0">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="再生回数・１年前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA6-Vc-3G1">
+                                                <rect key="frame" x="0.0" y="19.5" width="394" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aMj-AU-KbY">
+                                        <rect key="frame" x="10" y="56.5" width="394" height="45"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B9P-DR-U8C">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <color key="backgroundColor" red="0.39291743950000002" green="0.87195125240000004" blue="0.38950947720000001" alpha="0.94887093320000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="B9P-DR-U8C" secondAttribute="height" multiplier="1:1" id="50A-oa-Jv2"/>
+                                                    <constraint firstAttribute="height" constant="45" id="wwU-ah-WuA"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dR8-2H-SYa">
+                                                <rect key="frame" x="53" y="0.0" width="233" height="45"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チャンネル名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFi-p1-F56">
+                                                        <rect key="frame" x="0.0" y="0.0" width="233" height="22.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チャンネル登録者数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkB-c3-jNT">
+                                                        <rect key="frame" x="0.0" y="22.5" width="233" height="22.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQf-yP-iaM">
+                                                <rect key="frame" x="294" y="0.0" width="100" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="GYv-dA-Jr0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <state key="normal" title="チャンネル登録">
+                                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="iOO-Hk-Bgx"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Q7I-G7-kFR"/>
+                                    <constraint firstItem="5bq-TF-TdE" firstAttribute="top" secondItem="e7s-ZV-AbP" secondAttribute="top" constant="10" id="Tdr-65-5yQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="5bq-TF-TdE" secondAttribute="trailing" constant="10" id="gJB-60-t8g"/>
+                                    <constraint firstAttribute="trailing" secondItem="aMj-AU-KbY" secondAttribute="trailing" constant="10" id="gm7-LY-Zf7"/>
+                                    <constraint firstItem="aMj-AU-KbY" firstAttribute="top" secondItem="5bq-TF-TdE" secondAttribute="bottom" constant="10" id="mfw-q2-Vor"/>
+                                    <constraint firstItem="aMj-AU-KbY" firstAttribute="leading" secondItem="e7s-ZV-AbP" secondAttribute="leading" constant="10" id="qPk-YL-Ec2"/>
+                                    <constraint firstItem="5bq-TF-TdE" firstAttribute="leading" secondItem="e7s-ZV-AbP" secondAttribute="leading" constant="10" id="xWb-MG-lRc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ex2-q2-erx" firstAttribute="leading" secondItem="kUX-sS-aHN" secondAttribute="leading" id="1Td-BI-oey"/>
+                            <constraint firstItem="9dT-xb-485" firstAttribute="trailing" secondItem="kUX-sS-aHN" secondAttribute="trailing" id="509-KV-Xw6"/>
+                            <constraint firstAttribute="bottom" secondItem="9dT-xb-485" secondAttribute="bottom" id="HrX-XP-oO2"/>
+                            <constraint firstItem="Iew-cY-wOy" firstAttribute="leading" secondItem="kUX-sS-aHN" secondAttribute="leading" id="QQb-yj-9Fk"/>
+                            <constraint firstItem="e7s-ZV-AbP" firstAttribute="leading" secondItem="kUX-sS-aHN" secondAttribute="leading" id="RfV-oT-Ff9"/>
+                            <constraint firstItem="9dT-xb-485" firstAttribute="top" secondItem="7BE-qp-omJ" secondAttribute="top" id="S5s-Tq-6ut"/>
+                            <constraint firstItem="kUX-sS-aHN" firstAttribute="trailing" secondItem="e7s-ZV-AbP" secondAttribute="trailing" id="gFy-UP-yaT"/>
+                            <constraint firstItem="ex2-q2-erx" firstAttribute="top" secondItem="kUX-sS-aHN" secondAttribute="top" id="muT-Pj-V6p"/>
+                            <constraint firstItem="e7s-ZV-AbP" firstAttribute="top" secondItem="Iew-cY-wOy" secondAttribute="bottom" id="p2o-ls-B1X"/>
+                            <constraint firstItem="Iew-cY-wOy" firstAttribute="top" secondItem="kUX-sS-aHN" secondAttribute="top" id="pcW-PX-SjB"/>
+                            <constraint firstItem="kUX-sS-aHN" firstAttribute="trailing" secondItem="Iew-cY-wOy" secondAttribute="trailing" id="rD5-KE-ARm"/>
+                            <constraint firstAttribute="bottom" secondItem="ex2-q2-erx" secondAttribute="bottom" id="y7M-dW-NLc"/>
+                            <constraint firstItem="ex2-q2-erx" firstAttribute="trailing" secondItem="kUX-sS-aHN" secondAttribute="trailing" id="yIv-je-Ztz"/>
+                            <constraint firstItem="9dT-xb-485" firstAttribute="leading" secondItem="kUX-sS-aHN" secondAttribute="leading" id="yR5-P5-hcK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kUX-sS-aHN"/>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="ex2-q2-erx" id="LEQ-QL-Jlx"/>
+                        <outlet property="baseBackGroundView" destination="9dT-xb-485" id="FmB-gb-rFv"/>
+                        <outlet property="channelImageView" destination="B9P-DR-U8C" id="zFq-oe-PE8"/>
+                        <outlet property="channelTitleLabel" destination="DFi-p1-F56" id="Kvi-Us-eSB"/>
+                        <outlet property="videoImageView" destination="Iew-cY-wOy" id="aDv-FO-Adj"/>
+                        <outlet property="videoTitleLabel" destination="RlF-L3-rR0" id="qjl-4D-POb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zjx-4j-RJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276.81159420289856" y="-340.17857142857139"/>
+        </scene>
+    </scenes>
+</document>
